@@ -1,4 +1,4 @@
-from datetime import datetime,
+from datetime import datetime
 from .battery import Battery
 
 class NubbinBattery(Battery):
