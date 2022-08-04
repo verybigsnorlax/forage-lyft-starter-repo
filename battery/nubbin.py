@@ -8,4 +8,4 @@ class NubbinBattery(Battery):
 
 	def needs_service(self) -> bool:
 		# Requires service every 4 years (126,144,000 seconds)
-		return (self.current_date - self.last_service_date).total_seconds() >= 126144000
+		return (self.current_date - self.last_service_date).total_seconds() > 126144000

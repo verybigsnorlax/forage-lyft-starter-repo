@@ -8,4 +8,4 @@ class SpindlerBattery(Battery):
 
 	def needs_service(self) -> bool:
 		# Requires service every 2 years (63,072,000 seconds)
-		return (self.current_date - self.last_service_date).total_seconds() >= 63072000.0
+		return (self.current_date - self.last_service_date).total_seconds() > 63072000.0
