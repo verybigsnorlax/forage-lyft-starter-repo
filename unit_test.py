@@ -8,7 +8,7 @@ class TestCases(unittest.TestCase):
 	def test_calliope_battery_should_be_serviced(self):
 		# Battery should be serviced test
 		today = datetime.today()
-		last_service_date = today.replace(year=today.year - 3)
+		last_service_date = today.replace(year=today.year - 4)
 		current_mileage = 0
 		last_service_mileage = 0
 
@@ -18,7 +18,7 @@ class TestCases(unittest.TestCase):
 	def test_calliope_battery_should_not_be_serviced(self):
 		# Battery should not be serviced test
 		today = datetime.today()
-		last_service_date = today.replace(year=today.year - 1)
+		last_service_date = today.replace(year=today.year - 2)
 		current_mileage = 0
 		last_service_mileage = 0
 
@@ -47,7 +47,7 @@ class TestCases(unittest.TestCase):
 	def test_glissade_battery_should_be_serviced(self):
 		# Battery should be serviced test
 		today = datetime.today()
-		last_service_date = today.replace(year=today.year - 3)
+		last_service_date = today.replace(year=today.year - 4)
 		current_mileage = 0
 		last_service_mileage = 0
 
@@ -57,7 +57,7 @@ class TestCases(unittest.TestCase):
 	def test_glissade_battery_should_not_be_serviced(self):
 		# Battery should not be serviced test
 		today = datetime.today()
-		last_service_date = today.replace(year=today.year - 1)
+		last_service_date = today.replace(year=today.year - 2)
 		current_mileage = 0
 		last_service_mileage = 0
 
@@ -86,7 +86,7 @@ class TestCases(unittest.TestCase):
 	def test_palindrome_battery_should_be_serviced(self):
 		# Battery should be serviced test
 		today = datetime.today()
-		last_service_date = today.replace(year=today.year - 3)
+		last_service_date = today.replace(year=today.year - 4)
 		warning_light_on = False
 
 		car = cf.create_palindrome(today, last_service_date, warning_light_on)
@@ -95,7 +95,7 @@ class TestCases(unittest.TestCase):
 	def test_palindrome_battery_should_not_be_serviced(self):
 		# Battery should not be serviced test
 		today = datetime.today()
-		last_service_date = today.replace(year=today.year - 1)
+		last_service_date = today.replace(year=today.year - 2)
 		warning_light_on = False
 
 		car = cf.create_palindrome(today, last_service_date, warning_light_on)
