@@ -1,5 +1,8 @@
 import unittest
 from datetime import datetime
+import sys
+
+sys.path.append("..")
 from carfactory import CarFactory as cf
 
 class TestCases(unittest.TestCase):
