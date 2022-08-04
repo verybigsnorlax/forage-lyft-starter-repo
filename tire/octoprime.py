@@ -1,4 +1,4 @@
-from tire import Tire
+from .tire import Tire
 
 class OctoprimeTire(Tire):
 	def __init__(self, tires : list):
